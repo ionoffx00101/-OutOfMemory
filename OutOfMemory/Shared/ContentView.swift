@@ -8,9 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var newTask : String = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            inputTask
+            list
+        }
+    }
+    
+    var inputTask : some View {
+        TextField("New Task", text: $newTask)
+    }
+    
+    var list : some View {
+        List {
+            Text("Hello, world!")
+                .padding()
+            Text("Hello, world!")
+                .padding()
+            Text("Hello, world!")
+                .padding()
+            Text("Hello, world!")
+                .padding()
+            Text("Hello, world!")
+                .padding()
+            Text("Hello, world!")
+                .padding()
+            Text("Hello, world!")
+                .padding()
+            Text("Hello, world!")
+                .padding()
+            Text("Hello, world!")
+                .padding()
+    }
+       
     }
 }
 
